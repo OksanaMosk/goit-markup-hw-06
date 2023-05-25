@@ -912,15 +912,11 @@ body {
   opacity: 0;
 }
 
-.modal-form-chekbox:checked + .modal-form-chekbox-wrapper .modal-form-own {
-  background: var(--press-color);
-  border-color: var(--press-color);
-  background-color: var(--press-color);
-}
-
 .modal-form-chekbox:checked
   + .modal-form-chekbox-wrapper
   .modal-form-own-checkbox {
+  border-color: var(--press-color);
+  background-color: var(--press-color);
   border: none;
   fill: var(--secondary-color);
 }
