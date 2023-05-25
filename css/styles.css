@@ -863,6 +863,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
   outline: transparent;
   resize: none;
   transition: border-color var(--transition-dur-funk);
@@ -889,14 +890,14 @@ body {
 }
 
 .modal-form-own-checkbox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
   border: 1px solid var(--main-color);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
   border-radius: 2px;
   height: 16px;
@@ -913,16 +914,15 @@ body {
 
 .modal-form-chekbox:checked + .modal-form-chekbox-wrapper .modal-form-own {
   background: var(--press-color);
+  border-color: var(--press-color);
+  background-color: var(--press-color);
 }
 
 .modal-form-chekbox:checked
   + .modal-form-chekbox-wrapper
   .modal-form-own-checkbox {
-  outline: none;
   border: none;
   fill: var(--secondary-color);
-  border-color: var(--press-color);
-  background-color: var(--press-color);
 }
 
 .privacy-policy {
