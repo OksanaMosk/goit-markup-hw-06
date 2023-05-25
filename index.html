@@ -585,13 +585,13 @@
                 required
                 placeholder="E-mail"
               />
-              <button type="submit" class="subscribe-button">
-                Subscribe
-                <svg class="subscribe-letter" width="24px" height="24px">
-                  <use href="./images/icons.svg#letter"></use>
-                </svg>
-              </button>
             </label>
+            <button type="submit" class="subscribe-button">
+              Subscribe
+              <svg class="subscribe-letter" width="24px" height="24px">
+                <use href="./images/icons.svg#letter"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -613,7 +613,7 @@
               <input
                 id="user-name"
                 type="text"
-                name="your_name"
+                name="user-name"
                 class="modal-window-input"
                 minlength="3"
                 required
@@ -649,7 +649,7 @@
             </label>
             <div class="modal-form-input-wrapper">
               <input
-                for="user-email"
+                id="user-email"
                 type="email"
                 class="modal-window-input"
                 name="Email"
@@ -676,8 +676,8 @@
             <input
               id="user-privacy"
               type="checkbox"
-              name="user-policy"
-              class="modal-form-chekbox"
+              name="user-privacy"
+              class="modal-form-chekbox visually-hidden"
               value="true"
             />
             <label for="user-privacy" class="modal-form-chekbox-wrapper">

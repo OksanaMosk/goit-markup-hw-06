@@ -658,7 +658,7 @@ body {
 
 .subscribe-list {
   display: flex;
-  gap: 24px;
+  margin-right: 24px;
 }
 
 .subscribe-email {
@@ -671,10 +671,11 @@ body {
   outline: none;
   font-weight: 400;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--secondary-color);
   padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .subscribe-email::placeholder {
@@ -690,6 +691,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Roboto";
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -814,6 +816,8 @@ body {
 }
 
 .modal-form-input-icon {
+  width: 18px;
+  height: 24px;
   position: absolute;
   display: block;
   top: 50%;
@@ -828,13 +832,13 @@ body {
 }
 
 .modal-window-input {
-  padding-left: 42px;
   width: 100%;
   height: 40px;
   border: 1px solid rgba(46, 47, 66, 0.2);
   border-radius: 4px;
-  background: transparent;
+  outline: transparent;
   transition: border-color var(--transition-dur-funk);
+  padding-left: 38px;
 }
 
 .modal-window-input:focus {
@@ -860,7 +864,7 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  background-color: transparent;
+  outline: transparent;
   resize: none;
   transition: border-color var(--transition-dur-funk);
 }
@@ -903,6 +907,10 @@ body {
     background-color var(--transition-dur-funk),
     border var(--transition-dur-funk);
 }
+.modal-form-own {
+  width: 10px;
+  height: 8px;
+}
 
 .modal-form-own-icon {
   opacity: 0;
@@ -916,8 +924,10 @@ body {
   + .modal-form-chekbox-wrapper
   .modal-form-own-checkbox {
   outline: none;
+  border: none;
   fill: var(--secondary-color);
   border-color: var(--press-color);
+  background-color: var(--press-color);
 }
 
 .privacy-policy {
@@ -942,6 +952,9 @@ body {
   margin-left: auto;
   margin-right: auto;
   color: var(--secondary-color);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   width: 169px;
   height: 56px;
   background-color: var(--active-color);
@@ -951,6 +964,7 @@ body {
   transition: color var(--transition-dur-funk);
   border: none;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color var(--transition-dur-funk);
 }
 
 .modal-form-submit:hover,
