@@ -893,24 +893,21 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
   border: 1px solid var(--main-color);
   cursor: pointer;
   border-radius: 2px;
   height: 16px;
   width: 16px;
   fill: transparent;
+  margin-right: 8px;
 }
 
 .modal-form-chekbox:checked
   + .modal-form-chekbox-wrapper
   .modal-form-own-checkbox {
+  border: none;
   border-color: var(--press-color);
   background-color: var(--press-color);
-  border: none;
   fill: var(--secondary-color);
 }
 
@@ -920,7 +917,6 @@ body {
 }
 
 .modal-form-chekbox-wrapper {
-  padding-left: 18px;
   position: relative;
   font-size: 12px;
   line-height: 1.17;
