@@ -903,13 +903,6 @@ body {
   height: 16px;
   width: 16px;
   fill: transparent;
-  transition: opacity var(--transition-dur-funk),
-    background-color var(--transition-dur-funk),
-    border var(--transition-dur-funk);
-}
-
-.modal-form-own-icon {
-  opacity: 0;
 }
 
 .modal-form-chekbox:checked
