@@ -901,6 +901,7 @@ body {
   width: 16px;
   fill: transparent;
   margin-right: 8px;
+  border-color: rgba(46, 47, 66, 0.4);
 }
 
 .modal-form-chekbox:checked
